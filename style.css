@@ -1,0 +1,60 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#content {
+  width: 600px;
+  margin: 120px auto;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  font-size: 18px;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 40px 0 8px 0;
+}
+
+
+h1, h2 {
+  color: #0066CC;
+}
+
+#line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background-color: #0066CC;
+}
+
+#photo {
+  width: 150px;
+}
+
+#project-list {
+  display: flex;                  /* Flex box */
+  flex-direction: row;            /* Left to right */
+  flex-wrap: wrap;                /* Wrap content */
+  justify-content: space-between; /* Spread space */
+}
+
+.project {
+  flex: 0 0 140px;                /* No grow/shrink, 140px width */
+  height: 140px;
+  margin-bottom: 10px;
+  background-color: #7AA3CC;
+  transition: 0.2s background-color;
+}
+
+.project:hover {
+  background-color: #0066CC;
+}
