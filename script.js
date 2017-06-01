@@ -51,14 +51,14 @@ function closeNav() {
     document.getElementById("resumeOverlay").style.width = "0%";
 }
 
-/*function FitImagesToScreen() {
-    var images = document.getElementsByTagName('img');
-    if(images.length > 0){
-       for(int i=0; i < images.length; i++){
-           if(images[i].width >= (window.innerWidth - 10)){
-               images[i].style.width = 'auto';
-           }
-        }
-     }
-  }
-*/
+$('.circle').fadeOut(000).delay(1000).fadeIn(1500);
+
+
+$(".circle").hover(function(){
+if ( !$(this).data("bouncing") ){
+      $(this).effect("bounce", { direction: 'up', distance: 10, times: 1 })
+             .data("bouncing", true);
+}
+},function () {
+     $(this).data("bouncing", false);
+});
