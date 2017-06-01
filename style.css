@@ -2,6 +2,11 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+img {
+  max-width: 75%;
+  max-height: 95%;
+}
+
 #resumeOverlay {
   height: 100%;
   width: 0;
@@ -15,9 +20,10 @@ body {
 }
 
 .overlay-content {
-  position: relative;
-  width: 100%;
-  padding: 20px;
+  width: inherit%;
+  height: inherit%;
+  padding: 40px;
+  margin: 50px auto;
 }
 
 .overlay .closebtn {
@@ -25,6 +31,7 @@ body {
   top: 20px;
   right: 45px;
   font-size: 60px;
+  color: #FFFFFF;
 }
 
 @media screen and (max-height: 450px) {

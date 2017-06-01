@@ -26,7 +26,7 @@ jQuery.fn.loadRepositories = function(username) {
         var list = $('<dl/>');
         target.empty().append(list);
         $(repos).each(function() {
-            if (this.name != (username.toLowerCase()+'.github.com')) {
+            if (this.name != (username.toLowerCase()+'.github.io') && this.name != "hello-world" && this.name != "learning-area") {
                 list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
                 list.append('<dd>' + this.description +'</dd>');
             }
@@ -50,3 +50,15 @@ function openNav() {
 function closeNav() {
     document.getElementById("resumeOverlay").style.width = "0%";
 }
+
+/*function FitImagesToScreen() {
+    var images = document.getElementsByTagName('img');
+    if(images.length > 0){
+       for(int i=0; i < images.length; i++){
+           if(images[i].width >= (window.innerWidth - 10)){
+               images[i].style.width = 'auto';
+           }
+        }
+     }
+  }
+*/
