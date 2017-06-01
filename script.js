@@ -43,6 +43,7 @@ jQuery.fn.loadRepositories = function(username) {
 /* Open when someone clicks on the span element */
 function openNav() {
     document.getElementById("resumeOverlay").style.width = "100%";
+    console.log("function called");
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
