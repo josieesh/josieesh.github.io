@@ -1,5 +1,14 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Bubbler One', sans-serif;
+  color: white;
+}
+
+#grad {
+  background: black; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #2A0881, black); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #2A0881, black); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #2A0881, black); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #2A0881, black); /* Standard syntax */
 }
 
 img {
@@ -43,13 +52,18 @@ img {
 }
 
 #content {
-  width: 600px;
+  width: 80%;
   margin: 120px auto;
 }
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 8px;
+  margin-top: 200px;
+  font-size: 150px;
+  text-align: center;
+}
+
+#h1-div {
+  height: 100vh;
 }
 
 .subtext {
@@ -64,7 +78,7 @@ h2 {
 
 
 h1, h2 {
-  color: #0066CC;
+  color: white;
 }
 
 #line {
@@ -74,10 +88,6 @@ h1, h2 {
   top: 0;
   height: 4px;
   background-color: #0066CC;
-}
-
-#photo {
-  width: 150px;
 }
 
 #project-list {
