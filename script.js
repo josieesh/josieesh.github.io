@@ -54,7 +54,7 @@ function closeNav() {
 $('.circle').fadeOut(000).delay(1000).fadeIn(1500);
 
 
-$(".circle").hover(
+/*$(".circle").hover(
   function(){
       $(this).effect("shake", {times: 1, direction: "up", distance: 30});
-});
+});*/

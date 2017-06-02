@@ -10,6 +10,17 @@ body {
   background-repeat: no-repeat;
 }
 
+.shake-slow {
+	@include do-shake($name: 'shake-slow',
+                    $h: 40px,
+                    $v: 40px,
+                    $r: 10deg,
+                    $dur: 1000ms,
+                    $precision: 1,
+                    $opacity: true,
+                    $chunk: 100%);
+}
+
 .ui-effects-wrapper {
     display:block;
 }
