@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: 'Bubbler One', sans-serif;
   color: white;
   background-repeat: no-repeat;
@@ -38,6 +40,7 @@ img {
 }
 
 .circles{
+  max-width: 95%;
   padding: 12px;
   display: flex;
   justify-content: space-between;
@@ -184,13 +187,13 @@ img {
 #content {
   background-color: transparent;
   width: 100%;
-  margin: 120px auto;
+  margin: 12px auto;
   padding: 30px;
 }
 
 h1 {
   font-style: thin;
-  margin-top: 150px;
+  margin-top: 110px;
   font-size: 150px;
   text-align: center;
 }
