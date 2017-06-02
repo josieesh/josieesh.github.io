@@ -1,6 +1,11 @@
+html {
+  min-height: 100%;
+}
+
 body {
   font-family: 'Bubbler One', sans-serif;
   color: white;
+  background-repeat: no-repeat;
 }
 
 .ui-effects-wrapper {
@@ -9,10 +14,10 @@ body {
 
 #grad {
   background: black; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #2A0881, black); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #2A0881, black); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #2A0881, black); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #2A0881, black); /* Standard syntax */
+  background: -webkit-linear-gradient(left top, #2A0881, black 34%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #2A0881, black 34%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #2A0881, black 34%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #2A0881, black 34%); /* Standard syntax */
 }
 
 img {
@@ -33,6 +38,7 @@ img {
 }
 
 .circles{
+  padding: 12px;
   display: flex;
   justify-content: space-between;
 }
@@ -176,8 +182,10 @@ img {
 }
 
 #content {
-  width: 80%;
+  background-color: transparent;
+  width: 100%;
   margin: 120px auto;
+  padding: 30px;
 }
 
 h1 {

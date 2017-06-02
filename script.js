@@ -56,6 +56,5 @@ $('.circle').fadeOut(000).delay(1000).fadeIn(1500);
 
 $(".circle").hover(
   function(){
-      console.log("hovered");
-      $(this).effect("shake", { direction: 'up', distance: 20, times: 1 }, 30);
+      $(this).effect("shake", {times: 1, direction: "up", distance: 30});
 });
