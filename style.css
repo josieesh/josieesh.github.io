@@ -3,6 +3,10 @@ body {
   color: white;
 }
 
+.ui-effects-wrapper {
+    display:block;
+}
+
 #grad {
   background: black; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #2A0881, black); /* For Safari 5.1 to 6.0 */
@@ -34,9 +38,10 @@ img {
 }
 
 .circle {
+  display: block;
   border-radius: 50%;
-  width: 5px;
-  height: 200px;
+  width: 3px;
+  height: 300px;
   background-color: white;
   -moz-box-shadow: 10px 10px 5px #888;
   -webkit-box-shadow: 10px 10px 5px #888;
@@ -44,6 +49,107 @@ img {
 }
 
 #circle1 {
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+
+#circle2 {
+  height: 200px;
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
+}
+
+#circle3 {
+  height: 250px;
+    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+}
+
+#circle4 {
+  margin: 16px;
+  height: 270px;
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-5deg);
+}
+
+#circle5 {
+  margin: 8px;
+  height: 270px;
+    -ms-transform: rotate(14deg); /* IE 9 */
+    -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */
+    transform: rotate(14deg);
+}
+
+#circle6 {
+  height: 200px;
+    -ms-transform: rotate(6deg); /* IE 9 */
+    -webkit-transform: rotate(6deg); /* Chrome, Safari, Opera */
+    transform: rotate(6deg);
+}
+
+#circle7 {
+  margin: -4px;
+  height: 270px;
+    -ms-transform: rotate(-4deg); /* IE 9 */
+    -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+    transform: rotate(-4deg);
+}
+
+#circle8 {
+  margin: 16px;
+  height: 270px;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+    transform: rotate(-8deg);
+}
+
+#circle9 {
+  margin: 16px;
+  height: 270px;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+    transform: rotate(-8deg);
+}
+
+#circle10 {
+  margin: 16px;
+  height: 270px;
+    -ms-transform: rotate(13deg); /* IE 9 */
+    -webkit-transform: rotate(13deg); /* Chrome, Safari, Opera */
+    transform: rotate(13deg);
+}
+
+#circle11 {
+  margin: 16px;
+  height: 270px;
+    -ms-transform: rotate(11deg); /* IE 9 */
+    -webkit-transform: rotate(11deg); /* Chrome, Safari, Opera */
+    transform: rotate(11deg);
+}
+#circle12 {
+  margin: 16px;
+  height: 270px;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+    transform: rotate(-8deg);
+}
+#circle13 {
+  margin: -10px;
+  height: 270px;
+    -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
+}
+#circle14 {
+  margin: 16px;
+  height: 270px;
+    -ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
 }
 
 .overlay-content {
@@ -75,7 +181,8 @@ img {
 }
 
 h1 {
-  margin-top: 200px;
+  font-style: thin;
+  margin-top: 150px;
   font-size: 150px;
   text-align: center;
 }
@@ -105,7 +212,7 @@ h1, h2 {
   right: 0;
   top: 0;
   height: 4px;
-  background-color: #0066CC;
+  background-color: #ffffff;
 }
 
 #project-list {

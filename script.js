@@ -54,11 +54,8 @@ function closeNav() {
 $('.circle').fadeOut(000).delay(1000).fadeIn(1500);
 
 
-$(".circle").hover(function(){
-if ( !$(this).data("bouncing") ){
-      $(this).effect("bounce", { direction: 'up', distance: 10, times: 1 })
-             .data("bouncing", true);
-}
-},function () {
-     $(this).data("bouncing", false);
+$(".circle").hover(
+  function(){
+      console.log("hovered");
+      $(this).effect("shake", { direction: 'up', distance: 20, times: 1 }, 30);
 });
