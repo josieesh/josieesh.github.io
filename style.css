@@ -18,7 +18,13 @@ body {
                     $dur: 1000ms,
                     $precision: 1,
                     $opacity: true,
+                    $q: infinite,
+                    $t: ease-in-out,
                     $chunk: 100%);
+}
+
+.shake-chunk {
+	@include do-shake('shake-chunk', 40, 40, 20, 100ms, .1, $opacity: true);
 }
 
 .ui-effects-wrapper {
@@ -59,117 +65,186 @@ img {
 
 .circle {
   display: block;
-  border-radius: 50%;
-  width: 3px;
+  /*border-radius: 50%;*/
+  width: 6px;
   height: 300px;
   background-color: white;
   -moz-box-shadow: 10px 10px 5px #888;
   -webkit-box-shadow: 10px 10px 5px #888;
-  box-shadow: 10px 10px 5px #888;
+  opacity: 0.3;
 }
 
 #circle1 {
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+  height: 50px;
+  margin-top: 135px;
+  /*  -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);*/
 }
 
 #circle2 {
-  height: 200px;
-    -ms-transform: rotate(-5deg); /* IE 9 */
-    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
-    transform: rotate(-5deg);
+  height: 60px;
+  margin-top: 130px;
+    /*-ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); */
 }
 
 #circle3 {
-  height: 250px;
-    -ms-transform: rotate(-3deg); /* IE 9 */
-    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
-    transform: rotate(-3deg);
+  height: 70px;
+  margin-top: 125px;
+    /*-ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg); */
 }
 
 #circle4 {
-  margin: 16px;
-  height: 270px;
-    -ms-transform: rotate(-5deg); /* IE 9 */
-    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
-    transform: rotate(-5deg);
+  height: 80px;
+  margin-top: 120px;
+
+    /*-ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); */
 }
 
 #circle5 {
-  margin: 8px;
-  height: 270px;
-    -ms-transform: rotate(14deg); /* IE 9 */
-    -webkit-transform: rotate(14deg); /* Chrome, Safari, Opera */
-    transform: rotate(14deg);
+  height: 90px;
+  margin-top: 115px;
+
+    /*-ms-transform: rotate(14deg);
+    -webkit-transform: rotate(14deg);
+    transform: rotate(14deg); */
 }
 
 #circle6 {
-  height: 200px;
-    -ms-transform: rotate(6deg); /* IE 9 */
-    -webkit-transform: rotate(6deg); /* Chrome, Safari, Opera */
-    transform: rotate(6deg);
+  height: 100px;
+  margin-top: 110px;
+    /*-ms-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg); */
 }
 
 #circle7 {
-  margin: -4px;
-  height: 270px;
-    -ms-transform: rotate(-4deg); /* IE 9 */
-    -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
-    transform: rotate(-4deg);
+  height: 110px;
+  margin-top: 105px;
+    /*-ms-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg); */
 }
 
 #circle8 {
-  margin: 16px;
-  height: 270px;
-    -ms-transform: rotate(-8deg); /* IE 9 */
-    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
-    transform: rotate(-8deg);
+  height: 120px;
+  margin-top: 100px;
+    /*-ms-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg); */
 }
 
 #circle9 {
-  margin: 16px;
-  height: 270px;
-    -ms-transform: rotate(-8deg); /* IE 9 */
-    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
-    transform: rotate(-8deg);
+  height: 130px;
+  margin-top: 95px;
+    /*-ms-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg); */
 }
 
 #circle10 {
-  margin: 16px;
-  height: 270px;
-    -ms-transform: rotate(13deg); /* IE 9 */
-    -webkit-transform: rotate(13deg); /* Chrome, Safari, Opera */
-    transform: rotate(13deg);
+  height: 140px;
+  margin-top: 90px;
+    /*-ms-transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    transform: rotate(13deg); */
 }
 
 #circle11 {
-  margin: 16px;
-  height: 270px;
-    -ms-transform: rotate(11deg); /* IE 9 */
-    -webkit-transform: rotate(11deg); /* Chrome, Safari, Opera */
-    transform: rotate(11deg);
+  height: 150px;
+  margin-top: 85px;
+    /*-ms-transform: rotate(11deg);
+    -webkit-transform: rotate(11deg);
+    transform: rotate(11deg); */
 }
 #circle12 {
-  margin: 16px;
-  height: 270px;
-    -ms-transform: rotate(-8deg); /* IE 9 */
-    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
-    transform: rotate(-8deg);
+  height: 160px;
+  margin-top: 80px;
+    /*-ms-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg); */
 }
 #circle13 {
-  margin: -10px;
-  height: 270px;
-    -ms-transform: rotate(15deg); /* IE 9 */
-    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
-    transform: rotate(15deg);
+  height: 170px;
+  margin-top: 75px;
+    /*-ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); */
 }
 #circle14 {
-  margin: 16px;
+  height: 180px;
+  margin-top: 70px;
+    /*-ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);*/
+}
+
+#circle15 {
+  height: 190px;
+  margin-top: 65px;
+}
+
+#circle16 {
+  height: 200px;
+  margin-top: 60px;
+}
+
+#circle17 {
+  height: 210px;
+  margin-top: 55px;
+}
+
+#circle18 {
+  height: 220px;
+  margin-top: 50px;
+}
+#circle19 {
+  height: 230px;
+  margin-top: 45px;
+}
+
+#circle20 {
+  height: 240px;
+  margin-top: 40px;
+}
+
+#circle21 {
+  height: 250px;
+  margin-top: 35px;
+}
+
+#circle22 {
+  height: 260px;
+  margin-top: 30px;
+}
+#circle23 {
   height: 270px;
-    -ms-transform: rotate(3deg); /* IE 9 */
-    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
-    transform: rotate(3deg);
+  margin-top: 25px;
+}
+#circle24 {
+  height: 280px;
+  margin-top: 20px;
+}
+#circle25 {
+  height: 290px;
+  margin-top: 15px;
+}
+#circle26 {
+  height: 300px;
+  margin-top: 10px;
+}
+#circle27 {
+  height: 310px;
+  margin-top: 5px;
+}
+#circle28 {
+  height: 320px;
 }
 
 .overlay-content {
@@ -204,9 +279,10 @@ img {
 
 h1 {
   font-style: thin;
-  margin-top: 110px;
-  font-size: 150px;
+  margin-top: 125px;
+  font-size: 105px;
   text-align: center;
+  letter-spacing: 7px;
 }
 
 #h1-div {

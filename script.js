@@ -54,7 +54,21 @@ function closeNav() {
 $('.circle').fadeOut(000).delay(1000).fadeIn(1500);
 
 
-/*$(".circle").hover(
-  function(){
+$(".circle").mouseover(function() {
       $(this).effect("shake", {times: 1, direction: "up", distance: 30});
-});*/
+      $(this).css("opacity", 1);
+})
+  .mouseout(function() {
+    $(this).css("opacity", 0.3 );
+  });
+
+
+
+/*  $( "div.overout" )
+    .mouseover(function() {
+      $( "p:first", this ).text( "mouse over" );
+    })
+    .mouseout(function() {
+      $( "p:first", this ).text( "mouse out" );
+      $( "p:last", this ).text( ++i );
+    }); */
