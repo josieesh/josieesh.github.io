@@ -28,7 +28,9 @@ jQuery.fn.loadRepositories = function(username) {
         $(repos).each(function() {
             if (this.name != (username.toLowerCase()+'.github.io') && this.name != "hello-world" && this.name != "learning-area") {
                 list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
-                list.append('<dd>' + this.description +'</dd>');
+                //list.append('<dd>' + this.description +'</dd>');
+                list.append('<img id="(this.name)" src="'+(this.name)+'.png" href="'+ (this.homepage?this.homepage:this.html_url) +'" width="50" height="50"/>');
+                //list.append('<div id="GoGoose2017">''</div');
             }
         });
       });
