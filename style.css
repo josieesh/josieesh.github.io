@@ -3,7 +3,17 @@ html {
 }
 
 #centered {
-  text-align: center
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-style: thin;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 85px;
+  text-align: center;
+  letter-spacing: 5px;
 }
 
 body {
