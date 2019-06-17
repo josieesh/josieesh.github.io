@@ -7,9 +7,23 @@ html {
   margin-bottom: 15px;
 }
 
+.center-image {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#avatar {
+  margin-top: 100px; 
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
 h2 {
   font-style: thin;
-  margin-top: 5px;
   margin-bottom: 10px;
   font-size: 85px;
   text-align: center;
@@ -99,220 +113,6 @@ a:active {
   transition: 0.5s;
 }
 
-.circles{
-  max-width: 95%;
-  padding: 12px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.circle {
-  border-radius:20%;
-  display: block;
-  /*border-radius: 50%;*/
-  width: 6px;
-  height: 300px;
-  background-color: white;
-  -moz-box-shadow: 10px 10px 5px #888;
-  -webkit-box-shadow: 10px 10px 5px #888;
-  opacity: 0.3;
-}
-
-#circle1 {
-  height: 50px;
-  margin-top: 135px;
-  /*  -ms-transform: rotate(7deg);
-    -webkit-transform: rotate(7deg);
-    transform: rotate(7deg);*/
-}
-
-#circle2 {
-  height: 60px;
-  margin-top: 130px;
-    /*-ms-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg); */
-}
-
-#circle3 {
-  height: 70px;
-  margin-top: 125px;
-    /*-ms-transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg); */
-}
-
-#circle4 {
-  height: 80px;
-  margin-top: 120px;
-
-    /*-ms-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg); */
-}
-
-#circle5 {
-  height: 90px;
-  margin-top: 115px;
-
-    /*-ms-transform: rotate(14deg);
-    -webkit-transform: rotate(14deg);
-    transform: rotate(14deg); */
-}
-
-#circle6 {
-  height: 100px;
-  margin-top: 110px;
-    /*-ms-transform: rotate(6deg);
-    -webkit-transform: rotate(6deg);
-    transform: rotate(6deg); */
-}
-
-#circle7 {
-  height: 110px;
-  margin-top: 105px;
-    /*-ms-transform: rotate(-4deg);
-    -webkit-transform: rotate(-4deg);
-    transform: rotate(-4deg); */
-}
-
-#circle8 {
-  height: 120px;
-  margin-top: 100px;
-    /*-ms-transform: rotate(-8deg);
-    -webkit-transform: rotate(-8deg);
-    transform: rotate(-8deg); */
-}
-
-#circle9 {
-  height: 130px;
-  margin-top: 95px;
-    /*-ms-transform: rotate(-8deg);
-    -webkit-transform: rotate(-8deg);
-    transform: rotate(-8deg); */
-}
-
-#circle10 {
-  height: 140px;
-  margin-top: 90px;
-    /*-ms-transform: rotate(13deg);
-    -webkit-transform: rotate(13deg);
-    transform: rotate(13deg); */
-}
-
-#circle11 {
-  height: 150px;
-  margin-top: 85px;
-    /*-ms-transform: rotate(11deg);
-    -webkit-transform: rotate(11deg);
-    transform: rotate(11deg); */
-}
-#circle12 {
-  height: 160px;
-  margin-top: 80px;
-    /*-ms-transform: rotate(-8deg);
-    -webkit-transform: rotate(-8deg);
-    transform: rotate(-8deg); */
-}
-#circle13 {
-  height: 170px;
-  margin-top: 75px;
-    /*-ms-transform: rotate(15deg);
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg); */
-}
-#circle14 {
-  height: 180px;
-  margin-top: 70px;
-    /*-ms-transform: rotate(3deg);
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);*/
-}
-
-#circle15 {
-  height: 190px;
-  margin-top: 65px;
-}
-
-#circle16 {
-  height: 200px;
-  margin-top: 60px;
-}
-
-#circle17 {
-  height: 210px;
-  margin-top: 55px;
-}
-
-#circle18 {
-  height: 220px;
-  margin-top: 50px;
-}
-#circle19 {
-  height: 230px;
-  margin-top: 45px;
-}
-
-#circle20 {
-  height: 240px;
-  margin-top: 40px;
-}
-
-#circle21 {
-  height: 250px;
-  margin-top: 35px;
-}
-
-#circle22 {
-  height: 260px;
-  margin-top: 30px;
-}
-#circle23 {
-  height: 270px;
-  margin-top: 25px;
-}
-#circle24 {
-  height: 280px;
-  margin-top: 20px;
-}
-#circle25 {
-  height: 290px;
-  margin-top: 15px;
-}
-#circle26 {
-  height: 300px;
-  margin-top: 10px;
-}
-#circle27 {
-  height: 310px;
-  margin-top: 5px;
-}
-#circle28 {
-  height: 320px;
-}
-
-.overlay-content {
-  width: inherit%;
-  height: inherit%;
-  padding: 40px;
-  margin: 50px auto;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  color: #FFFFFF;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
 
 #content {
   background-color: transparent;
@@ -323,14 +123,10 @@ a:active {
 
 h1 {
   font-style: thin;
-  margin-top: 125px;
+  margin-top: 10px;
   font-size: 105px;
   text-align: center;
   letter-spacing: 7px;
-}
-
-#h1-div {
-  height: 100vh;
 }
 
 .subtext {
@@ -340,7 +136,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  margin: 40px 0 8px 0;
+  margin: 10px 0 8px 0;
 }
 
 
