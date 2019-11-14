@@ -52,252 +52,210 @@
   </div><!-- container -->
 </section><!-- intro-section -->
 
-<section class="portfolio-section section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-      </div><!-- col-sm-3 -->
-      <div class="col-sm-8">
-        <div class="portfolioFilter clearfix margin-b-80">
-          <a href="#" data-filter=".about"><b>About</b></a>
-          <a href="#" data-filter=".projects"><b>Projects</b></a>
-          <a href="#" data-filter=".hobbies"><b>Hobbies</b></a>
-        </div><!-- portfolioFilter -->
-      </div><!-- col-sm-8 -->
-    </div><!-- row -->
-  </div><!-- container -->
+<div class="container" style="padding: 15px 0px">
+  <div class="row">
+    <div class="col-md-1 col-lg-2"></div>
+    <div class="col-md-10 col-lg-8" id="myBtnContainer">
+      <div style="text-align: center;">
+          <button class="btn active" onclick="filterSelection('about')"><b>About</b></button>
+          <button class="btn" onclick="filterSelection('experience')"><b>Experience</b></button>
+          <button class="btn" onclick="filterSelection('education')"><b>Education</b></button>
+          <button class="btn" onclick="filterSelection('projects')"><b>Projects</b></button>
+          <button  class="btn" onclick="filterSelection('hobbies')"><b>Hobbies</b></button>
+      </div>
 
-  <div class="portfolioContainer">
+    </div>
+  </div>
+</div>
 
-    <div class="p-item projects">
-      <a href="images/portfolio-1-600x400.jpg" data-fluidbox>
-        <img src="images/portfolio-1-600x400.jpg" alt=""></a>
-    </div><!-- p-item -->
+<div class="page">
+    <div class="filterDiv projects" style="height:100%;"> 
+        <section class="portfolio-section section" style="height: 100%;">
+          <div class="portfolioContainer">
+                <div class="p-item">
+                  <a href="https://chrome.google.com/webstore/detail/web-summarizer/oopblafookndjhplfiafojeiidobdbpl" target="_blank">
+                    <img src="images/WebSummarizer.png" alt=""></a>
+                </div><!-- p-item -->
+              
+                <div class="p-item">
+                  <a href="https://devpost.com/software/grubit-tech" target="_blank">
+                    <img src="images/enghack2018.png" alt=""></a>
+                </div><!-- p-item -->
+            
+                <div class="p-item p-item">
+                    <a class="img" href="images/portfolio-8-300x400.jpg" data-fluidbox>
+                      <img src="images/portfolio-8-300x400.jpg" alt=""></a>
+                  </div>
 
-    <div class="p-item branding projects">
-      <a href="images/portfolio-7-600x800.jpg" data-fluidbox>
-        <img src="images/portfolio-7-600x800.jpg" alt=""></a>
-    </div><!-- p-item -->
+          </div><!-- portfolioContainer -->
+        
+        </section><!-- portfolio-section -->
+      </div>
+      
+      
+      <div class="filterDiv about">
+        <section class="about-section section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="heading">
+                  <h3><b>About me</b></h3>
+                </div>
+              </div><!-- col-sm-4 -->
+              <div class="col-sm-8">
+                <p class="margin-b-50">Systems Design Engineering student at the University of Waterloo. I have
+                  completed 4/5 years at this program and 5/6 internship placements. Currently looking for my sixth and final co-op placement
+                for the Summer of 2020.</p>
+        
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="radial-prog-area margin-b-30">
+                      <div class="radial-progress" data-prog-percent=".8">
+                        <div></div>
+                        <h6 class="progress-title">Undergraduate degree</h6>
+                      </div>
+                    </div><!-- radial-prog-area-->
+                  </div><!-- col-sm-6-->
+        
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="radial-prog-area margin-b-30">
+                      <div class="radial-progress" data-prog-percent=".83">
+                        <div></div>
+                        <h6 class="progress-title">Internships completed</h6>
+                      </div>
+                    </div><!-- radial-prog-area-->
+                  </div><!-- col-sm-6-->
+        
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="radial-prog-area margin-b-30">
+                      <div class="radial-progress" data-prog-percent=".67">
+                        <div></div>
+                        <h6 class="progress-title">Percent body mass in pasta</h6>
+                      </div>
+                    </div><!-- radial-prog-area-->
+                  </div><!-- col-sm-6-->
+        
+                </div><!-- row -->
+              </div><!-- col-sm-8 -->
+            </div><!-- row -->
+          </div><!-- container -->
+        </section><!-- about-section -->
+      </div>
+      
+      <div class="filterDiv experience">
+        <section class="experience-section section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="heading">
+                  <h3><b>Work Experience</b></h3>
+                  <h6 class="font-lite-black"><b>PREVIOUS CO-OPS</b></h6>
+                </div>
+              </div><!-- col-sm-4 -->
+              <div class="col-sm-8">
+        
+                <div class="experience margin-b-50">
+                  <h4><b>BACKEND ENGINEERING INTERN</b></h4>
+                  <h5 class="font-yellow"><b>AUTODESK INC</b></h5>
+                  <h6 class="margin-t-10">SEPTEMBER 2019 - PRESENT</h6>
+        
+                  <ul class="list margin-b-30">
+                    <li>Leading the API design of the newest feature of Autodesk Construction Solutions’ PlanGrid application. This
+                      entails working closely with developers and engineers to optimize payload transfers and offline sync capability.
+                      </li>
+                    <li>Migrating monolithic code to microservice architecture while transitioning services from REST to GraphQL.</li>
+                  </ul>
+                </div><!-- experience -->
+        
+                <div class="experience margin-b-50">
+                  <h4><b>BACKEND DEVELOPER INTERN</b></h4>
+                  <h5 class="font-yellow"><b>TUNNELBEAR INC (ACQUIRED BY MCAFEE)</b></h5>
+                  <h6 class="margin-t-10">JANUARY 2019 - MAY 2019</h6>
+                  <ul class="list margin-b-30">
+                    <li>Deployed asynchronous RESTful microservices in Scala and Java of the TunnelBear VPN back-end infrastructure.</li>
+                    <li>Improved average server response times across client-facing endpoints with server-side cache optimizations.</li>
+                    <li>Took part in building out secure and robust client-server authorization protocol following OAuth 2.0 framework.</li>
+                    <li>Shipped Functional, scalable code in adherence with rigorous privacy and security benchmarks to deliver a VPN
+                    product that met security and load demands of large-scale clients/partners, specifically Samsung and Verizon.</li>
+                  </ul>
+                </div><!-- experience -->
+        
+                <div class="experience margin-b-50">
+                  <h4><b>DATA ENGINEERING INTERN</b></h4>
+                  <h5 class="font-yellow"><b>TUNNELBEAR INC (ACQUIRED BY MCAFEE)</b></h5>
+                  <h6 class="margin-t-10">MAY 2018 - SEPTEMBER 2018</h6>
+                  <ul class="list margin-b-30">
+                    <li>Improved data processing speed by over 200% through redesign of tables and entities, database indexing,
+                      moving appropriate data to distributed clusters and performance optimization of SQL queries.</li>
+                    <li>Developed automated, fault-tolerant ETL pipelines in Python using Apache Airflow and Apache Spark for
+                      the delivery of meaningful data to the marketing and analytics teams. Also assisted in data analysis and presentation.</li>
+                    <li>Aggregated, processed and stored real-time data from relational and NoSQL databases using AWS tools.</li>
+                  </ul>
+                </div><!-- experience -->
+        
+                <div class="experience margin-b-50">
+                  <h4><b>SOFTWARE DEVELOPER INTERN</b></h4>
+                  <h5 class="font-yellow"><b>FINASTRA</b></h5>
+                  <h6 class="margin-t-10">SEPTEMBER 2017 - DECEMBER 2017</h6>
+        
+                  <ul class="list margin-b-30">
+                    <li>Designed and shipped internal server health-monitoring app for company-wide diagnostics which allowed QA and
+                      DevOps to identify network issues with greater speed and ease and cut down monthly downtime to one third. </li>
+                  </ul>
+                </div><!-- experience -->
+        
+                <div class="experience margin-b-50">
+                  <h4><b>QA AUTOMATION ENGINEERING INTERN</b></h4>
+                  <h5 class="font-yellow"><b>CLIMAX MEDIA</b></h5>
+                  <h6 class="margin-t-10">JANUARY 2017 - APRIL 2017</h6>
+                  <ul class="list margin-b-30">
+                    <li>Developed and shipped internal QA portal application using NodeJS and React. Wrote automated testing
+                      pipelines using WebDriverIO, Selenium, Mocha, Javascript. </li>
+                  </ul>
+                </div><!-- experience -->
+        
+              </div><!-- col-sm-8 -->
+            </div><!-- row -->
+          </div><!-- container -->
+        
+        </section><!-- experience-section -->
+      </div>
+      
+      <div class="filterDiv education">
+        <section class="education-section section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="heading">
+                  <h3><b>Education</b></h3>
+                </div>
+              </div><!-- col-sm-4 -->
+              <div class="col-sm-8">
+                <div class="education-wrapper">
+                  <div class="education margin-b-50">
+                    <h4><b>CANDIDATE FOR BACHELOR OF APPLIED SCIENCE</b></h4>
+                    <h5 class="font-yellow"><b>UNIVERSITY OF WATERLOO - SYSTEMS DESIGN ENGINEERING</b></h5>
+                    <h6 class="font-lite-black margin-t-10">EXPECTED GRADUATION: MAY 2021 (5 year program)</h6>
+                    <ul class="list margin-b-30">
+                      <li>Dean's Honor List</li>
+                      <li>3.5 GPA</li>
+                    </ul>
+                  </div><!-- education -->
+                </div><!-- education-wrapper -->
+              </div><!-- col-sm-8 -->
+            </div><!-- row -->
+          </div><!-- container -->
+        
+        </section><!-- about-section -->
+      </div>
+      
+      <div class="filterDiv hobbies">
+      
+      </div>
+</div>
 
-    <div class="p-item projects">
-      <a href="images/portfolio-2-600x400.jpg" data-fluidbox>
-        <img src="images/portfolio-2-600x400.jpg" alt=""></a>
-    </div><!-- p-item -->
-
-    <div class="p-item p-item-2 projects">
-      <a class="img" href="images/portfolio-8-300x400.jpg" data-fluidbox>
-        <img src="images/portfolio-8-300x400.jpg" alt=""></a>
-      <a class="img" href="images/portfolio-9-300x400.jpg" data-fluidbox>
-        <img src="images/portfolio-9-300x400.jpg" alt=""></a>
-    </div><!-- p-item -->
-
-    <div class="p-item branding projects">
-      <a href="images/portfolio-3-600x400.jpg" data-fluidbox>
-        <img src="images/portfolio-3-600x400.jpg" alt=""></a>
-    </div><!-- p-item -->
-
-    <div class="p-item hobbies">
-      <a href="images/portfolio-4-600x400.jpg" data-fluidbox>
-        <img src="images/portfolio-4-600x400.jpg" alt=""></a>
-    </div><!-- p-item -->
-
-  </div><!-- portfolioContainer -->
-
-</section><!-- portfolio-section -->
 
 
-<section class="about-section section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="heading">
-          <h3><b>About me</b></h3>
-        </div>
-      </div><!-- col-sm-4 -->
-      <div class="col-sm-8">
-        <p class="margin-b-50">Systems Design Engineering student at the University of Waterloo. I have
-          completed 4/5 years at this program and 5/6 internship placements. Currently looking for my sixth and final co-op placement
-        for the Summer of 2020.</p>
-
-        <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="radial-prog-area margin-b-30">
-              <div class="radial-progress" data-prog-percent=".8">
-                <div></div>
-                <h6 class="progress-title">Undergraduate degree</h6>
-              </div>
-            </div><!-- radial-prog-area-->
-          </div><!-- col-sm-6-->
-
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="radial-prog-area margin-b-30">
-              <div class="radial-progress" data-prog-percent=".83">
-                <div></div>
-                <h6 class="progress-title">Internships completed</h6>
-              </div>
-            </div><!-- radial-prog-area-->
-          </div><!-- col-sm-6-->
-
-          <div class="col-sm-6 col-md-6 col-lg-3">
-            <div class="radial-prog-area margin-b-30">
-              <div class="radial-progress" data-prog-percent=".67">
-                <div></div>
-                <h6 class="progress-title">Percent daily diet in pasta</h6>
-              </div>
-            </div><!-- radial-prog-area-->
-          </div><!-- col-sm-6-->
-
-        </div><!-- row -->
-      </div><!-- col-sm-8 -->
-    </div><!-- row -->
-  </div><!-- container -->
-</section><!-- about-section -->
-
-<section class="experience-section section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="heading">
-          <h3><b>Work Experience</b></h3>
-          <h6 class="font-lite-black"><b>PREVIOUS CO-OPS</b></h6>
-        </div>
-      </div><!-- col-sm-4 -->
-      <div class="col-sm-8">
-
-        <div class="experience margin-b-50">
-          <h4><b>BACKEND ENGINEERING INTERN</b></h4>
-          <h5 class="font-yellow"><b>AUTODESK INC</b></h5>
-          <h6 class="margin-t-10">SEPTEMBER 2019 - PRESENT</h6>
-
-          <ul class="list margin-b-30">
-            <li>Leading the API design of the newest feature of Autodesk Construction Solutions’ PlanGrid application. This
-              entails working closely with developers and engineers to optimize payload transfers and offline sync capability.
-              </li>
-            <li>Migrating monolithic code to microservice architecture while transitioning services from REST to GraphQL.</li>
-          </ul>
-        </div><!-- experience -->
-
-        <div class="experience margin-b-50">
-          <h4><b>BACKEND DEVELOPER INTERN</b></h4>
-          <h5 class="font-yellow"><b>TUNNELBEAR INC (ACQUIRED BY MCAFEE)</b></h5>
-          <h6 class="margin-t-10">JANUARY 2019 - MAY 2019</h6>
-          <ul class="list margin-b-30">
-            <li>Deployed asynchronous RESTful microservices in Scala and Java of the TunnelBear VPN back-end infrastructure.</li>
-            <li>Improved average server response times across client-facing endpoints with server-side cache optimizations.</li>
-            <li>Took part in building out secure and robust client-server authorization protocol following OAuth 2.0 framework.</li>
-            <li>Shipped Functional, scalable code in adherence with rigorous privacy and security benchmarks to deliver a VPN
-            product that met security and load demands of large-scale clients/partners, specifically Samsung and Verizon.</li>
-          </ul>
-        </div><!-- experience -->
-
-        <div class="experience margin-b-50">
-          <h4><b>DATA ENGINEERING INTERN</b></h4>
-          <h5 class="font-yellow"><b>TUNNELBEAR INC (ACQUIRED BY MCAFEE)</b></h5>
-          <h6 class="margin-t-10">MAY 2018 - SEPTEMBER 2018</h6>
-          <ul class="list margin-b-30">
-            <li>Improved data processing speed by over 200% through redesign of tables and entities, database indexing,
-              moving appropriate data to distributed clusters and performance optimization of SQL queries.</li>
-            <li>Developed automated, fault-tolerant ETL pipelines in Python using Apache Airflow and Apache Spark for
-              the delivery of meaningful data to the marketing and analytics teams. Also assisted in data analysis and presentation.</li>
-            <li>Aggregated, processed and stored real-time data from relational and NoSQL databases using AWS tools.</li>
-          </ul>
-        </div><!-- experience -->
-
-        <div class="experience margin-b-50">
-          <h4><b>SOFTWARE DEVELOPER INTERN</b></h4>
-          <h5 class="font-yellow"><b>FINASTRA</b></h5>
-          <h6 class="margin-t-10">SEPTEMBER 2017 - DECEMBER 2017</h6>
-
-          <ul class="list margin-b-30">
-            <li>Designed and shipped internal server health-monitoring app for company-wide diagnostics which allowed QA and
-              DevOps to identify network issues with greater speed and ease and cut down monthly downtime to one third. </li>
-          </ul>
-        </div><!-- experience -->
-
-        <div class="experience margin-b-50">
-          <h4><b>QA AUTOMATION ENGINEERING INTERN</b></h4>
-          <h5 class="font-yellow"><b>CLIMAX MEDIA</b></h5>
-          <h6 class="margin-t-10">JANUARY 2017 - APRIL 2017</h6>
-          <ul class="list margin-b-30">
-            <li>Developed and shipped internal QA portal application using NodeJS and React. Wrote automated testing
-              pipelines using WebDriverIO, Selenium, Mocha, Javascript. </li>
-          </ul>
-        </div><!-- experience -->
-
-      </div><!-- col-sm-8 -->
-    </div><!-- row -->
-  </div><!-- container -->
-
-</section><!-- experience-section -->
-
-<section class="education-section section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="heading">
-          <h3><b>Education</b></h3>
-        </div>
-      </div><!-- col-sm-4 -->
-      <div class="col-sm-8">
-        <div class="education-wrapper">
-          <div class="education margin-b-50">
-            <h4><b>CANDIDATE FOR BACHELOR OF APPLIED SCIENCE</b></h4>
-            <h5 class="font-yellow"><b>UNIVERSITY OF WATERLOO - SYSTEMS DESIGN ENGINEERING</b></h5>
-            <h6 class="font-lite-black margin-t-10">EXPECTED GRADUATION: MAY 2021 (5 year program)</h6>
-            <ul class="list margin-b-30">
-              <li>Dean's Honor List</li>
-              <li>3.5 GPA</li>
-            </ul>
-          </div><!-- education -->
-        </div><!-- education-wrapper -->
-      </div><!-- col-sm-8 -->
-    </div><!-- row -->
-  </div><!-- container -->
-
-</section><!-- about-section -->
-
-<section style="display:none"class="counter-section" id="counter">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <div class="counter margin-b-30">
-          <h1 class="title"><b><span class="counter-value" data-duration="400" data-count="3">0</span></b></h1>
-          <h5 class="desc"><b>Coder Degrees</b></h5>
-        </div><!-- counter -->
-      </div><!-- col-md-3-->
-
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <div class="counter margin-b-30">
-          <h1 class="title"><b><span class="counter-value" data-duration="1400" data-count="25">0</span></b></h1>
-          <h5 class="desc"><b>Project Completed</b></h5>
-        </div><!-- counter -->
-      </div><!-- col-md-3-->
-
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <div class="counter margin-b-30">
-          <h1 class="title"><b><span class="counter-value" data-duration="700" data-count="311">0</span></b></h1>
-          <h5 class="desc"><b>Satisfied Clients</b></h5>
-        </div><!-- counter -->
-      </div><!-- col-md-3-->
-
-      <div class="col-sm-6 col-md-6 col-lg-3">
-        <div class="counter margin-b-30">
-          <h1 class="title"><b><span class="counter-value" data-duration="2000" data-count="732">0</span></b></h1>
-          <h5 class="desc"><b>Finished Projects</b></h5>
-        </div><!-- margin-b-30 -->
-      </div><!-- col-md-3-->
-
-    </div><!-- row-->
-  </div><!-- container-->
-</section><!-- counter-section-->
-
-<footer>
-  <p class="copyright">
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  </p>
 
 
 </footer>

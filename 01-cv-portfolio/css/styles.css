@@ -44,10 +44,10 @@ h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
 h1,h2,h3{ font-family: 'Poppins', cursive; }
 
-p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #777; }
+p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #fff; }
 
 h1{ font-size: 4em; line-height: 1; }
-h2{ font-size: 2.2em; line-height: 1.1; }
+h2{ font-size: 2.2em; line-height: 1.1; color:#ffffff;}
 h3{ font-size: 1.8em; }
 h4{ font-size: 1.3em; }
 h5{ font-size: 1em; }
@@ -76,13 +76,33 @@ button{ outline: 0; border: 0; background: none; cursor: pointer; }
 
 b.max-bold{ font-weight: 700; }
 
+.filterDiv {
+	display:none;
+}
+
+.show {
+	display: block;
+}
+button.active {
+	text-decoration: none; color: #FFA804; 
+  }
+
+.page{
+	height: 50%;
+}
+
 
 
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
 
-.section{ padding: 100px 0 50px; }
+.section{ 
+	padding: 75px 0 50px; 
+	background: #131339;
+	color: #fff;
+	height:100%;
+}
 
 .section .heading{ margin-bottom: 60px; }
 
@@ -129,7 +149,7 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 --------------------------------- */
 
 .intro-section{ padding-top: 400px; position: relative; background-size: cover;
-	z-index: -50;background-image: url(../../images/header.jpg); }
+	z-index: 50;background-image: url(../../images/header.jpg); }
 
 .intro-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; 
 	right: 0; background: rgba(0,0,0, .2); }
@@ -137,7 +157,13 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 .intro-section:after{ content: ''; position: absolute; bottom: 0; left: 0; right: 0;
 	height: 15px; z-index: -1; background: #fff; }
 
-.intro{ padding: 0 20px; margin-top: 100px; text-align: center; background: #fff; }
+.intro{ 
+	padding: 0 20px; 
+	margin-top: 50px; 
+	margin-bottom: 20px;
+	text-align: center; 
+	background-color: rgba(0,0,0,0)
+}
 
 .intro .profile-img{ height: 200px; width: 200px; border-radius: 100px; margin: 0 auto; 
 	overflow: hidden; position: relative; top: -100px; margin-bottom: -70px;  }
@@ -154,28 +180,25 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 
 .intro .social-icons > li > a:hover:after{ -webkit-transform: scale(1); transform: scale(1); }
 
+.social-icons {
+	padding-bottom: 15px;
+}
 
 /* ---------------------------------
-5. PORFOLIO SECTION
+5. PORTFOLIO SECTION
 --------------------------------- */
 
-.portfolio-section{ padding: 100px !important 0 50px; padding-bottom: 0; }
+.portfolio-section {background: #fff;}
 
-.portfolio-section .portfolioFilter{ margin-top: 60px; color: #666; }
+.portfolio-section .portfolioContainer{ margin-left: 20%; margin-right: 20%; }
 
-.portfolio-section .portfolioFilter a{ margin: 10px 10px 0 0; }
+.portfolio-section .p-item{ 
+	float: left;
+	width: 33.33%;
+	padding: 0 10px 0px; 
+}
 
-.portfolio-section .portfolioFilter a.current{  color: #FFA804; }
-
-.portfolio-section .portfolioContainer{ margin-left: -15px; margin-right: -15px; }
-
-.portfolio-section .p-item{ width: 33.333%; padding: 0 7.5px 0px; margin-top: 15px; }
-
-.portfolio-section .p-item a{ display: inline; }
-
-.portfolio-section .p-item.p-item-2 .img:first-child{ float: left; width: 50%; padding-right: 7.5px; }
-
-.portfolio-section .p-item.p-item-2 .img:last-child{ float: right; width: 50%; padding-left: 7.5px; }
+.portfolio-section .p-item a{ display: inline-block; position: relative; }
 
 
 /* ---------------------------------
@@ -185,12 +208,12 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 .radial-progress{ position: relative; max-width: 200px; margin: 0 auto; }
 
 .radial-progress .progressbar-text{ font-size: 2.2em; font-weight: 500; 
-	padding-bottom: 25px!important; color: #333!important; }
+	padding-bottom: 25px; color: #fff; }
 
 .radial-progress .progressbar-text:after{ content:'%'; }
 
 .radial-progress .progress-title{ position: absolute; top: 50%; left: 50%; width: 100%;
-	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #777; }
+	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #fff; }
 
 	
 
@@ -245,12 +268,12 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 .radial-progress{ position: relative; max-width: 200px; margin: 0 auto; }
 
 .radial-progress .progressbar-text{ font-size: 2.2em; font-weight: 500; 
-	padding-bottom: 25px!important; color: #333!important; }
+	padding-bottom: 25px!important; color: #fff!important; }
 
 .radial-progress .progressbar-text:after{ content:'%'; }
 
 .radial-progress .progress-title{ position: absolute; top: 50%; left: 50%; width: 100%;
-	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #777; }
+	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #fff; }
 
 	
 	

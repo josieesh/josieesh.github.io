@@ -14,48 +14,13 @@
 	// ACCORDIAN
 	panelAccordian();
 
-	$(window).on('load', function(){
-		
-		// ISOTOPE PORTFOLIO WITH FILTER
-		if(isExists('.portfolioContainer')){
-			var $container = $('.portfolioContainer');
-			$container.isotope({
-				filter: '*',
-				animationOptions: {
-					duration: 750,
-					easing: 'linear',
-					queue: false
-				}
-			});
-		 
-			$('.portfolioFilter a').click(function(){
-				$('.portfolioFilter .current').removeClass('current');
-				$(this).addClass('current');
-		 
-				var selector = $(this).attr('data-filter');
-				$container.isotope({
-					filter: selector,
-					animationOptions: {
-						duration: 750,
-						easing: 'linear',
-						queue: false
-					}
-				 });
-				 return false;
-			}); 
-		}
-	
+	$(window).on('load', function(){	
 	});
 	
 	
 	$('a[href="#"]').on('click', function(event){
 		return;
 	});
-	
-	
-	if ( $.isFunction($.fn.fluidbox) ) {
-		$('a').fluidbox();
-	}
 	
 	var countCounterUp = 0;
 	
@@ -71,6 +36,54 @@
 	
 	
 })(jQuery);
+
+
+filterSelection("about")
+function filterSelection(c) {
+	var x, i;
+	x = document.getElementsByClassName("filterDiv");
+	// Add the "show" class to the filtered elements, remove from all other elements
+	for (i=0; i<x.length; i++) {
+		removeClass(x[i], "show");
+		if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+	}
+}
+
+// Show filtered elements
+function addClass(element, name) {
+	var i, arr1, arr2;
+	arr1 = element.className.split(" ");
+	arr2 = name.split(" ");
+	for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {
+			element.className += " " + arr2[i];
+		}
+	}
+}
+
+function removeClass(element, name) {
+	var i, arr1, arr2;
+	arr1 = element.className.split(" ");
+	arr2 = name.split(" ");
+	for (i = 0; i <arr2.length; i++) {
+		while(arr1.indexOf(arr2[i]) > -1) {
+			arr1.splice(arr1.indexOf(arr2[i]), 1);
+		}
+	}
+	element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function() {
+	var current = document.getElementsByClassName("active");
+	current[0].className = current[0].className.replace(" active", "");
+	this.className += " active";
+	});
+}
+
 
 function panelAccordian(){
 	
